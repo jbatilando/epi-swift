@@ -1,4 +1,8 @@
+// MARK: Solution
+// P: Increment an arbitraty-precision integer
 class Solution {
+    // Time: O(n)
+    // Space: O(n) or O(1) if we can modify input
     func solve(_ a: [Int]) -> [Int] {
         guard !a.isEmpty else { return [Int]() }
         var a = a

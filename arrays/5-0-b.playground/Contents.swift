@@ -1,5 +1,10 @@
+// MARK: Solutions
+// P: Reorder array entries such that even entries appear first
 class Solution {
-    func evenOdd(_ arr: [Int]) -> [Int] {
+    // Partition array into 3 subarrays: Even, Unclassified, Odd
+    // Time: O(n)
+    // Space: O(1)
+    func solve(_ arr: [Int]) -> [Int] {
         guard !arr.isEmpty else { return [Int]() }
     
         var evenPtr = 0, oddPtr = arr.count - 1
@@ -23,9 +28,9 @@ class Solution {
 var test1 = [1,4,1,4,2,1,3,5,6]
 var test2 = [Int]()
 var test3 = [9,2,5,1,2,6,4,7,1]
-
-// MARK: Solution
 var sol = Solution()
-// sol.hIndex(test1)
-print("test1:", sol.evenOdd(test1))
+
+print("Test1: ", sol.solve(test1))
+print("Test2: ", sol.solve(test2))
+print("Test3: ", sol.solve(test3))
 

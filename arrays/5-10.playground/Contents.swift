@@ -1,5 +1,8 @@
+// MARK: Solution
+// P: Permute the elements of an array
 class Solution {
-    // Time and space: O(n) and O(n)
+    // Time: O(n)
+    // Space: O(n)
     func solve(_ a: [Int], _ p: [Int]) -> [Int] {
         var a = a, p = p
         
@@ -16,8 +19,8 @@ class Solution {
 }
 
 // MARK: Test cases
-var a = [2,0,1,3] // permutation
+var a = [2,0,1,3]
 var p = [1,2,3,4]
-// MARK: Solution
 var sol = Solution()
+
 print("test1:", sol.solve(a,p))

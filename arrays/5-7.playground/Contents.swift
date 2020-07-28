@@ -1,5 +1,8 @@
+// MARK: Solution
+// P: Buy and sell a stock twice
 class Solution {
-    // Time and space: O(n)
+    // Time: O(n)
+    // Space: O(n)
     func solve(_ a: [Int]) -> Int {
         var minSoFar = Int.max, maxProfit = 0
         var firstBuyAndSell = Array(repeating: 0, count: a.count)
@@ -21,7 +24,8 @@ class Solution {
         return maxProfit
     }
     
-    // Time: O(n) Space: O(1)
+    // Time: O(n)
+    // Space: O(1)
     func solve2(_ a: [Int]) -> Int {
         var firstCost = Int.max, secondCost = Int.max
         var firstProfit = 0, secondProfit = 0
@@ -41,8 +45,8 @@ class Solution {
 var test1 = [2,5,3,6,7,4,1,3,6] // 3 + 3
 var test2 = [310,315,275,295,260,270,290,230,255,300] // 20 + 10; 30 + 70
 var test3 = [3,3,5,0,0,3,1,4]
-// MARK: Solution
 var sol = Solution()
+
 print("test1:", sol.solve2(test1))
 print("test2:", sol.solve2(test2))
 print("test3:", sol.solve2(test3))

@@ -1,4 +1,8 @@
+// MARK: Solution
+// P: The Dutch National Flag
 class Solution {
+    // Time: O(n^2)
+    // Space: O(1)
     func solve(_ arr: [Int], _ i: Int) -> [Int] {
         guard !arr.isEmpty else { return [Int]() }
         var a = arr, pivot = a[i]
@@ -24,6 +28,8 @@ class Solution {
         return a
     }
     
+    // Time: O(n)
+    // Space: O(1)
     func solve2(_ arr: [Int], _ i: Int) -> [Int] {
         guard !arr.isEmpty else { return [Int]() }
         var a = arr, pivot = a[i]
@@ -71,12 +77,10 @@ class Solution {
 
 // MARK: Test cases
 var test1 = [1,7,4,1,4,2,1,3,5,6]
-// [1,4,1,4,2,1,3,5,6]
 var test2 = [Int]()
 var test3 = [9,2,5,1,2,6,4,7,1]
-
-// MARK: Solution
 var sol = Solution()
+
 print("test1:", sol.solve3(test1, 2))
 print("test2:", sol.solve3(test2, 2))
 print("test3:", sol.solve3(test3, 2))

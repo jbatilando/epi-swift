@@ -1,5 +1,8 @@
+// MARK: Solution
+// P: Enumerate all primes to n
 class Solution {
-    // Time and space: O(n) and O(n)
+    // Time: O(n)
+    // Space: O(n)
     func solve(_ n: Int) -> [Int] {
         var res = [Int]()
         var isPrime = Array(repeating: true, count: n + 1)
@@ -27,8 +30,8 @@ class Solution {
 var test1 = 3
 var test2 = 6
 var test3 = 10
-// MARK: Solution
 var sol = Solution()
+
 print("test1:", sol.solve(test1))
 print("test2:", sol.solve(test2))
 print("test3:", sol.solve(test3))

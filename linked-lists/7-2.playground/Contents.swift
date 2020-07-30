@@ -6,9 +6,9 @@ public class ListNode {
         self.next = nil
     }
 }
-
+// MARK: Solution
 class Solution {
-    // Time and space:
+    // Time
     func solve(_ head: ListNode?, _ s: Int, _ f: Int) -> ListNode? {
         if head == nil { return nil }
         var dummyHead = ListNode(0)

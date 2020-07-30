@@ -15,6 +15,8 @@ public class ListNode {
 
 // MARK: Solution
 class Solution {
+    // Time: O(n)
+    // Space: O(1)
     func solve(_ head: ListNode?) -> ListNode? {
         var dummy = ListNode(0, head)
         var slow = head, fast = head?.next

@@ -7,14 +7,17 @@ public class ListNode {
     }
 }
 
+// MARK: Solution
 class Solution {
+    // Time: O(n)
+    // Space: O(1)
     func solve(_ head: ListNode?, _ k: Int) -> ListNode? {
         if head == nil { return nil }
         var dummy = ListNode(0)
         dummy.next = head
         var slow: ListNode? = dummy, fast = head
         
-        for _ in 1..<n {
+        for _ in 1..<k {
             fast = fast?.next
         }
         
@@ -35,10 +38,9 @@ class Solution {
 var n1 = ListNode(1)
 var n2 = ListNode(2)
 var n3 = ListNode(3)
+var sol = Solution()
 n1.next = n2
 n2.next = n3
 // D -> 1 -> 2 -> 3 -> nil
 
-// MARK: Solution
-var sol = Solution()
 print("test1:", sol.solve(n1, 2))

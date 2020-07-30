@@ -7,9 +7,11 @@ public class ListNode {
     }
 }
 
+// MARK: Solution
 class Solution {
-    // Time and space:
-    func solve(_ l1: ListNode?,_ l2: ListNode?) -> Bool {
+    // Time: O(f) + O(c) where f is the number of nodes to the start of the cycle, and c the number of nodes on the nunber of the cycle, n be the number of total nodes
+    // Space: O(1)
+    func solve(_ l1: ListNode?, _ l2: ListNode?) -> Bool {
         var l1 = l1, l2 = l2
         var firstHead = l1, secondHead = l2
         
@@ -59,6 +61,5 @@ n6.next = n1
 
 // 1 -> 2 -> 3 -> 4)
 //          7 -> (4 -> 5 -> 6
-// MARK: Solution
 var sol = Solution()
 print("test1:", sol.solve(n1, n7))

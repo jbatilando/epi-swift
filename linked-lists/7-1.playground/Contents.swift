@@ -7,15 +7,17 @@ public class ListNode {
     }
 }
 
-// It hangs, some shit is fucked up
+// MARK: Solutions
+// P: Merge two sorted lists
 class Solution {
-    // Time and space:
+    // Time: O(n)
+    // Space: O(n)
     func solve(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         if l1 == nil { return l2 }
         if l2 == nil { return l1 }
         var l1 = l1, l2 = l2
         
-        var pre = ListNode(0)
+        let pre = ListNode(0)
         var current: ListNode? = pre
         
         while l1 != nil && l2 != nil {
@@ -58,6 +60,5 @@ n2.next = n4
 n4.next = n6
 // 2-> 4 -> 6
 
-// MARK: Solution
 var sol = Solution()
 print("test1:", sol.solve(n1, n2))
